@@ -64,3 +64,7 @@ def initialize_db():
     conn.commit()
     conn.close()
     print("Tables created successfully")
+
+#---------------------------Functions--------------------------------
+
+
