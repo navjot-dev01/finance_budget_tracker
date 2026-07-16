@@ -116,7 +116,7 @@ class TransactionsPage(ctk.CTkFrame):
                 text_color=COLOR_TEXT_MUTED
             )
             # Center type and actions, left-align rest
-            sticky = "w" if idx not in [2, 5] else "c"
+            sticky = "w" if idx not in [2, 5] else ""
             padx = 15 if sticky == "w" else 0
             lbl.grid(row=0, column=idx, padx=padx, sticky=sticky)
             
@@ -251,7 +251,7 @@ class TransactionsPage(ctk.CTkFrame):
                 width=75,
                 height=22
             )
-            type_lbl.grid(row=0, column=2, sticky="c")
+            type_lbl.grid(row=0, column=2, sticky="")
             
             # 4. Amount
             prefix = "+" if t.type == "income" else "-"
@@ -268,7 +268,7 @@ class TransactionsPage(ctk.CTkFrame):
             
             # 6. Action buttons
             actions_frame = ctk.CTkFrame(row_frame, fg_color="transparent")
-            actions_frame.grid(row=0, column=5, sticky="c")
+            actions_frame.grid(row=0, column=5, sticky="")
             
             edit_btn = ctk.CTkButton(
                 actions_frame,

@@ -14,7 +14,7 @@ class App(ctk.CTk):
         self.minsize(1000, 600)
         
         # Set default appearance mode (system, dark, or light)
-        ctk.set_appearance_mode("system")
+        ctk.set_appearance_mode("light")
         
         # Set default color theme
         ctk.set_default_color_theme("blue")
